@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/styson/c/snake/build",
+  "command": "/usr/bin/g++  -I/home/styson/c/snake/SFML -g -o CMakeFiles/snake.dir/main.cpp.o -c /home/styson/c/snake/main.cpp",
+  "file": "/home/styson/c/snake/main.cpp"
+},
+{
+  "directory": "/home/styson/c/snake/build",
+  "command": "/usr/bin/g++  -I/home/styson/c/snake/SFML -g -o CMakeFiles/snake.dir/snake.cpp.o -c /home/styson/c/snake/snake.cpp",
+  "file": "/home/styson/c/snake/snake.cpp"
+},
+{
+  "directory": "/home/styson/c/snake/build",
+  "command": "/usr/bin/g++  -I/home/styson/c/snake/SFML -g -o CMakeFiles/snake.dir/gameWindow.cpp.o -c /home/styson/c/snake/gameWindow.cpp",
+  "file": "/home/styson/c/snake/gameWindow.cpp"
+}
+]
