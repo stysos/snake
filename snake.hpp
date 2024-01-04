@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+#include "structs.hpp"
 
 enum movementDirection {
     up,
@@ -13,8 +14,10 @@ class Snake {
     ~Snake();
     void snakeMove(movementDirection direction);
     void drawSnake(sf::RenderWindow *window);
+    void correctOutOfBounds(GameSize gameSettings);
 
     private:
     sf::Texture snakeTexture; 
     sf::RectangleShape snakeSprite;
+
 };

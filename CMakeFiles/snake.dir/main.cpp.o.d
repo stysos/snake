@@ -239,4 +239,4 @@ CMakeFiles/snake.dir/main.cpp.o: /home/styson/c/snake/main.cpp \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/styson/c/snake/snake.hpp
+ /home/styson/c/snake/snake.hpp /home/styson/c/snake/structs.hpp

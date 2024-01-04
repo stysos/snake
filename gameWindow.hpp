@@ -1,11 +1,7 @@
 #include <SFML/Graphics.hpp>
 
 #include "snake.hpp"
-
-struct GameSize {
-    int x;
-    int y;
-};
+#include "structs.hpp"
 
 class GameWindow
 {

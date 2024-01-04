@@ -299,7 +299,8 @@ CMakeFiles/snake.dir/gameWindow.cpp.o: gameWindow.cpp \
   /usr/include/SFML/Graphics/Text.hpp \
   /usr/include/SFML/Graphics/VertexBuffer.hpp \
   gameWindow.hpp \
-  snake.hpp
+  snake.hpp \
+  structs.hpp
 
 CMakeFiles/snake.dir/main.cpp.o: main.cpp \
   /usr/include/stdc-predef.h \
@@ -602,7 +603,8 @@ CMakeFiles/snake.dir/main.cpp.o: main.cpp \
   /usr/include/SFML/Graphics/Sprite.hpp \
   /usr/include/SFML/Graphics/Text.hpp \
   /usr/include/SFML/Graphics/VertexBuffer.hpp \
-  snake.hpp
+  snake.hpp \
+  structs.hpp
 
 CMakeFiles/snake.dir/snake.cpp.o: snake.cpp \
   /usr/include/stdc-predef.h \
@@ -901,16 +903,19 @@ CMakeFiles/snake.dir/snake.cpp.o: snake.cpp \
   /usr/include/SFML/Graphics/Glsl.inl \
   /usr/include/SFML/Graphics/Sprite.hpp \
   /usr/include/SFML/Graphics/Text.hpp \
-  /usr/include/SFML/Graphics/VertexBuffer.hpp
+  /usr/include/SFML/Graphics/VertexBuffer.hpp \
+  structs.hpp
 
-
-snake.cpp:
 
 /usr/include/c++/11/bits/istream.tcc:
 
 /usr/include/c++/11/istream:
 
 main.cpp:
+
+snake.cpp:
+
+structs.hpp:
 
 snake.hpp:
 

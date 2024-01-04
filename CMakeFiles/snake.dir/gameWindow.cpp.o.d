@@ -239,4 +239,5 @@ CMakeFiles/snake.dir/gameWindow.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/styson/c/snake/gameWindow.hpp /home/styson/c/snake/snake.hpp
+ /home/styson/c/snake/gameWindow.hpp /home/styson/c/snake/snake.hpp \
+ /home/styson/c/snake/structs.hpp
