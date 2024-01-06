@@ -11,7 +11,8 @@ find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
 
 add_executable(snake main.cpp
                     snake.cpp
-                    gameWindow.cpp)
+                    gameWindow.cpp
+                    food.cpp)
 
 target_link_libraries(snake sfml-graphics sfml-audio)
 

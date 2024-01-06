@@ -2,6 +2,7 @@
 
 #include "snake.hpp"
 #include "structs.hpp"
+#include "food.hpp"
 
 class GameWindow
 {
@@ -15,6 +16,7 @@ public:
 private:
     sf::RenderWindow window;
     Snake snake;
+    Food food;
 
     void setSettings(int x, int y);
 };

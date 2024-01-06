@@ -523,6 +523,30 @@ snake/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake.dir/build.make CMakeFiles/snake.dir/build
 .PHONY : snake/fast
 
+food.o: food.cpp.o
+.PHONY : food.o
+
+# target to build an object file
+food.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake.dir/build.make CMakeFiles/snake.dir/food.cpp.o
+.PHONY : food.cpp.o
+
+food.i: food.cpp.i
+.PHONY : food.i
+
+# target to preprocess a source file
+food.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake.dir/build.make CMakeFiles/snake.dir/food.cpp.i
+.PHONY : food.cpp.i
+
+food.s: food.cpp.s
+.PHONY : food.s
+
+# target to generate assembly for a file
+food.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake.dir/build.make CMakeFiles/snake.dir/food.cpp.s
+.PHONY : food.cpp.s
+
 gameWindow.o: gameWindow.cpp.o
 .PHONY : gameWindow.o
 
@@ -635,6 +659,9 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... snake"
+	@echo "... food.o"
+	@echo "... food.i"
+	@echo "... food.s"
 	@echo "... gameWindow.o"
 	@echo "... gameWindow.i"
 	@echo "... gameWindow.s"

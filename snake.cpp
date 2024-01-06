@@ -1,11 +1,14 @@
+#include <iostream>
+
 #include "snake.hpp"
 #include "structs.hpp"
+#include "food.hpp"
 
 constexpr int movementSpeed = 5;
 
 Snake::Snake()
 {
-    const sf::Vector2f snakeSize{10.0, 10.0};
+    const sf::Vector2f snakeSize{ 10.0, 10.0 };
     this->snakeSprite.setFillColor(sf::Color::Yellow);
     this->snakeSprite.setSize(snakeSize);
     this->snakeSprite.setPosition(10, 10);
@@ -15,16 +18,39 @@ Snake::~Snake()
 {
 }
 
-void Snake::drawSnake(sf::RenderWindow *window)
+void Snake::drawSnake(sf::RenderWindow* window)
 {
     window->draw(this->snakeSprite);
 }
 
+
+
+void Snake::checkCollisions(GameSize gameSettings, Food* food) {
+
+    this->correctOutOfBounds(gameSettings);
+    this->checkFood(food);
+
+}
+
+void Snake::checkFood(Food* food) {
+
+    sf::Vector2f foodPosition = food->getPosition();
+    sf::Vector2f snakePosition = this->snakeSprite.getPosition();
+
+    if (snakePosition.x == foodPosition.x and snakePosition.y == foodPosition.y) {
+        this->eatFood();
+        food->createNew();
+    }
+
+}
+
+void Snake::eatFood() {
+    std::cout << "Add new part to snake!" << std::endl;
+}
+
+
 void Snake::snakeMove(movementDirection direction)
 {
-    // Todo: Add check for out of bounds - reset on other side.
-    // Smart way to do this? Set bound on value? 
-    // Check after evaluating then correct? Then don't have to repeat for each.
 
     switch (direction)
     {
@@ -54,14 +80,16 @@ void Snake::correctOutOfBounds(GameSize gameSettings) {
 
     if (snakeX < 0) {
         this->snakeSprite.setPosition(gameSettings.x, snakeY);
-    } else if (snakeX > gameSettings.x) {
+    }
+    else if (snakeX > gameSettings.x) {
         this->snakeSprite.setPosition(0, snakeY);
     }
 
-    
+
     if (snakeY < 0) {
         this->snakeSprite.setPosition(snakeX, gameSettings.y);
-    } else if (snakeY > gameSettings.y) {
+    }
+    else if (snakeY > gameSettings.y) {
         this->snakeSprite.setPosition(snakeX, 0);
     }
 }

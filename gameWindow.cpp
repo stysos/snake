@@ -53,7 +53,9 @@ void GameWindow::runningLoop()
 
         snake.snakeMove(direction);
 
-        snake.correctOutOfBounds(this->gameSettings);
+        snake.checkCollisions(this->gameSettings, &this->food);
+
+        food.drawFood(&this->window);
 
         snake.drawSnake(&this->window);
 
