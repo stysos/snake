@@ -47,6 +47,7 @@ void Snake::checkCollisions(GameSize gameSettings, Food* food) {
 void Snake::checkFood(Food* food) {
 
     sf::Vector2f foodPosition = food->getPosition();
+    // TODO: Add plus or minus size ( Maybe function to take sf::Vector2f and check if equal +- size of RectangleShape)
     sf::Vector2f snakePosition = this->snakeSprite.getPosition();
 
     if (snakePosition.x == foodPosition.x and snakePosition.y == foodPosition.y) {
