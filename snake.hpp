@@ -1,4 +1,6 @@
 #include <SFML/Graphics.hpp>
+#include <vector>
+
 #include "structs.hpp"
 
 #include "food.hpp"
@@ -24,8 +26,11 @@ private:
     void checkFood(Food* food);
     void eatFood();
 
+    sf::RectangleShape createPart(sf::Color color);
+
     sf::Texture snakeTexture;
     sf::RectangleShape snakeSprite;
+    std::vector<sf::RectangleShape> snakeBody;
 
 
 };
